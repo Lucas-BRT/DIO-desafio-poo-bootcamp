@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Mentoria {
     private String titulo;
     private String descricao;
-    private LocalDate cargaHoraria;
+    private int cargaHoraria;
 
     @Override
     public String toString() {
@@ -32,11 +32,11 @@ public class Mentoria {
         this.descricao = descricao;
     }
 
-    public LocalDate getCargaHoraria() {
+    public int getCargaHoraria() {
         return cargaHoraria;
     }
 
-    public void setCargaHoraria(LocalDate cargaHoraria) {
+    public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
 }
