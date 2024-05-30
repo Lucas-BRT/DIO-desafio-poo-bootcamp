@@ -5,15 +5,11 @@ import java.time.LocalDate;
 public class Mentoria {
     private String titulo;
     private String descricao;
-    private int cargaHoraria;
+    private LocalDate data;
 
     @Override
     public String toString() {
-        return "Mentoria{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
-                '}';
+        return "Mentoria{" + "titulo='" + titulo + '\'' + ", descricao='" + descricao + '\'' + ", data=" + data + '}';
     }
 
     public String getTitulo() {
@@ -32,11 +28,12 @@ public class Mentoria {
         this.descricao = descricao;
     }
 
-    public int getCargaHoraria() {
-        return cargaHoraria;
+
+    public LocalDate getData() {
+        return data;
     }
 
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 }
